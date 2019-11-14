@@ -13,7 +13,7 @@ import '@polymer/polymer/polymer-legacy.js';
 import {NeonAnimationBehavior} from '@polymer/neon-animation/neon-animation-behavior.js';
 import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
 Polymer({
-  is: 'paper-menu-grow-height-animation',
+  is: 'capptions-menu-grow-height-animation',
   /** @override */
   _template: null,
 
@@ -34,7 +34,7 @@ Polymer({
 });
 
 Polymer({
-  is: 'paper-menu-grow-width-animation',
+  is: 'capptions-menu-grow-width-animation',
   _template: null,
 
   behaviors: [NeonAnimationBehavior],
@@ -54,7 +54,7 @@ Polymer({
 });
 
 Polymer({
-  is: 'paper-menu-shrink-width-animation',
+  is: 'capptions-menu-shrink-width-animation',
   _template: null,
 
   behaviors: [NeonAnimationBehavior],
@@ -74,7 +74,7 @@ Polymer({
 });
 
 Polymer({
-  is: 'paper-menu-shrink-height-animation',
+  is: 'capptions-menu-shrink-height-animation',
   _template: null,
 
   behaviors: [NeonAnimationBehavior],
