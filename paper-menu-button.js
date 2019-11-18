@@ -14,7 +14,7 @@ import '@polymer/neon-animation/animations/fade-in-animation.js';
 import '@polymer/neon-animation/animations/fade-out-animation.js';
 import '@polymer/paper-styles/default-theme.js';
 import '@polymer/paper-styles/shadow.js';
-import './capptions-menu-button-animations.js';
+import './paper-menu-button-animations.js';
 
 import {IronA11yKeysBehavior} from '@polymer/iron-a11y-keys-behavior/iron-a11y-keys-behavior.js';
 import {IronControlState} from '@polymer/iron-behaviors/iron-control-state.js';
@@ -68,7 +68,7 @@ Custom property | Description | Default
 
 @demo demo/index.html
 */
-export const CapptionsMenuButton = Polymer({
+export const PaperMenuButton = Polymer({
   /** @override */
   _template: html`
     <style>
@@ -130,7 +130,7 @@ export const CapptionsMenuButton = Polymer({
     </iron-dropdown>
 `,
 
-  is: 'capptions-menu-button',
+  is: 'paper-menu-button',
 
   /**
    * Fired when the dropdown opens.
@@ -221,7 +221,7 @@ export const CapptionsMenuButton = Polymer({
         return [
           {name: 'fade-in-animation', timing: {delay: 100, duration: 200}},
           {
-            name: 'capptions-menu-grow-width-animation',
+            name: 'paper-menu-grow-width-animation',
             timing: {
               delay: 100,
               duration: 150,
@@ -229,7 +229,7 @@ export const CapptionsMenuButton = Polymer({
             }
           },
           {
-            name: 'capptions-menu-grow-height-animation',
+            name: 'paper-menu-grow-height-animation',
             timing: {
               delay: 100,
               duration: 275,
@@ -250,7 +250,7 @@ export const CapptionsMenuButton = Polymer({
         return [
           {name: 'fade-out-animation', timing: {duration: 150}},
           {
-            name: 'capptions-menu-shrink-width-animation',
+            name: 'paper-menu-shrink-width-animation',
             timing: {
               delay: 100,
               duration: 50,
@@ -258,7 +258,7 @@ export const CapptionsMenuButton = Polymer({
             }
           },
           {
-            name: 'capptions-menu-shrink-height-animation',
+            name: 'paper-menu-shrink-height-animation',
             timing: {duration: 200, easing: 'ease-in'}
           }
         ];
@@ -404,5 +404,5 @@ export const CapptionsMenuButton = Polymer({
 });
 
 Object.keys(config).forEach(function(key) {
-  CapptionsMenuButton[key] = config[key];
+  PaperMenuButton[key] = config[key];
 });
